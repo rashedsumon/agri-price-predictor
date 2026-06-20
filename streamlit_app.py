@@ -10,7 +10,7 @@ from model import preprocess_and_train, predict_future_price
 # Page Configuration Setup
 st.set_page_config(page_title="Agri-Price AI Forecaster", page_icon="🌾", layout="wide")
 
-st.title("🌾 Agricultural Produce Price Forecast Dashboard")
+st.title("🌾 Agricultural Produce Price Prediction")
 st.write("Predicting vegetable and fruit prices utilizing historical time-series datasets.")
 
 # Step 1: Cache and load data automatically
