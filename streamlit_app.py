@@ -50,7 +50,7 @@ if st.sidebar.button("Run Price Prediction"):
         st.error("Item mapping calculation error.")
 
 # Main window presentation context - Historical Trend Data Chart Visualization
-st.subheader(f"📈 Historical Price Trends for {selected_item}")
+
 item_history = cleaned_df[cleaned_df['Commodity'] == selected_item].sort_values(by='Date')
 
 if not item_history.empty:
