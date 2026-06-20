@@ -51,10 +51,4 @@ if st.sidebar.button("Run Price Prediction"):
 
 # Main window presentation context - Historical Trend Data Chart Visualization
 
-item_history = cleaned_df[cleaned_df['Commodity'] == selected_item].sort_values(by='Date')
 
-if not item_history.empty:
-    fig = px.line(item_history, x='Date', y='Average', title=f"Price arc history profile (Rs per KG) for {selected_item}")
-    st.plotly_chart(fig, use_container_width=True)
-else:
-    st.info("No matching item history timeline records to show.")
